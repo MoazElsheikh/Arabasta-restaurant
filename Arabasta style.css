@@ -1,0 +1,194 @@
+body{
+    margin: 0px;
+}
+
+/*Header Part*/
+
+#header{
+    padding: 60px 30px 230px 30px;
+    margin-bottom: 10px;
+    background-image: url('Images/Arabasta cover light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#header h1{
+    margin: 40px 0px 20px 60px;
+    width: fit-content;
+    font-size: 130px;
+    color: #de8a49;
+}
+
+div#header p{
+    margin: 10px 0px 100px 65px;
+    font-size: 39px;
+    width: fit-content;
+    color: #de8a49;
+}
+
+div#header a{
+    margin-left: 240px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 35px;
+    color: black;
+    background-color: #de8a49;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div#header a:active{
+    background-color: #713e17;
+}
+
+#dark{
+    margin-left: 1350px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    padding: 10px 10px;
+    width: 100px;
+    border-radius: 35px;
+    border-color: transparent;
+    color: white;
+    background-color: #492d17;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#dark:active{
+    background-color: #ffb47b;
+    color: #000;
+}
+
+#light{
+    margin-left: 1350px;
+    font-size: 13px;
+    padding: 10px 10px;
+    width: 100px;
+    border-radius: 35px;
+    border-color: transparent;
+    color: black;
+    background-color: #ffb47b;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+#light:active{
+    background-color: #492d17;
+    color: white;
+}
+
+
+/*food menue*/
+
+#food_menue{
+    background-color: white;
+    padding-left: 95px;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+.food-card {
+    width: 350px;
+    height: 350px;
+    margin: 50px 0px 10px 40px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.food-card img {
+    width: 100%;
+    height: 250px;
+    
+}
+
+.food-info {
+    padding: 10px;
+}
+
+.food-info h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.food-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.food-info .price {
+    font-size: 16px;
+    color: #000;
+}
+
+
+
+/*Order Form*/
+
+#order{
+    border: solid black 1px;
+    margin: 100px;
+    padding: 0%;
+    height: 600px;
+}
+  
+/* Form */
+#form{
+    padding: 30px 0px 0px 30px;
+    background-color: #f1f1f1;
+    width: 50%;
+    height: 95%;
+}
+
+div#form h3{
+    font-size: xx-large;
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+  
+/* Form fields */
+#form input,
+#form select{
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+#form label{
+    font-size: 17px;
+    font-weight: bold;
+}
+  
+/* Form submit button */
+ #form button{
+    background-color: #de8a49;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 16px 25px;
+    margin-bottom: 0px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#form button:active{
+    background-color: #713e17;
+    color: white;
+}
+  
+/* Image */
+div#order_img{
+    float: right;
+    background-image: url('Images/order background.jpg');
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

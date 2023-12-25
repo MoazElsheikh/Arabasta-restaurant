@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Arabasta Restaurant  </title>
+	<link rel="stylesheet" href="Arabasta style.css">
+	
+	<script src="jquery-3.7.1.js"></script>
+
+</head>
+
+<body>
+
+	<!-- #HEADER -->
+
+	<div id="header">
+
+		<button id="dark" onclick="DarkMode()">Dark mode</button>
+		<button id="light" onclick="LightMode()">Light mode</button>
+
+		<h1> Arabasta </h1>
+
+		<p>Where all tastes could be found</p>
+
+		<a href="#order">Order Now!</a>
+
+		
+		<!-- The background would be add in css -->
+
+	</div>
+
+
+	<div id="food_menue">
+
+	<!--Here are our food, meals, and dishes-->
+
+		<ul class="food-menu-list">
+
+            <li>
+				<div class="food-card">
+					<img src="Images/Korean-BBQ-Beef-Quesadillas.jpg" alt="Korean BBQ Beef Quesadillas">
+					<div class="food-info">
+						<h4>Korean BBQ Beef Quesadillas</h4>
+						<span class="price">$69</span>
+					</div>
+            </li>
+
+			<li>
+				<div class="food-card">
+					<img src="Images/Loaded-Chorizo-Kimchi-Hot-Dogs.jpg" alt="Loaded Chorizo Kimchi Hot Dogs">
+					<div class="food-info">
+						<h4>Loaded Chorizo Kimchi Hot Dogs</h4>
+						<span class="price">$52</span>
+					</div>
+            </li>
+
+			<li>
+				<div class="food-card">
+					<img src="Images/Naan-Chos with Chana Masala.jpg" alt="Naan-Chos with Chana Masala">
+					<div class="food-info">
+						<h4>Naan-Chos with Chana Masala</h4>
+						<span class="price">$81</span>
+					</div>
+            </li>
+
+			<li>
+				<div class="food-card">
+					<img src="Images/ramen-carbonara.jpg" alt="ramen carbonara">
+					<div class="food-info">
+						<h4>ramen carbonara</h4>
+						<span class="price">$34</span>
+					</div>
+            </li>
+
+			<li>
+				<div class="food-card">
+					<img src="Images/taco-pizza.jpg" alt="taco pizza">
+					<div class="food-info">
+						<h4>Chicken Unlimited</h4>
+						<span class="price">$45</span>
+					</div>
+            </li>
+
+			<li>
+				<div class="food-card">
+					<img src="Images/thai-peanut-hummus.jpg" alt="thai peanut hummus">
+					<div class="food-info">
+						<h4>thai peanut hummus</h4>
+						<span class="price">$23</span>
+					</div>
+            </li>
+		
+	</div>
+
+
+	<div id="order">
+
+		<div id="order_img">
+			<!--here will be the order img-->
+		</div>
+
+		<div id="form">
+			<h3>Order Now!</h3>
+
+			<form action="Arabastaphp.php" method="post" target="" onsubmit="submitForm()">
+
+				<label for="Fname"> First Name:</label>
+				<input id="Fname" type="text" name="FirstName" placeholder="Ahmed" required>
+			<br><br>
+				<label for="Lname"> Last Name:</label>
+				<input id="Lname" type="text" name="LastName" Placeholder="Adel" required>
+			<br><br>
+				<label for="Phone"> Phone Num:</label>
+				<input id="Phone" type="text" name="Number" placeholder="0123456789" required>
+			<br><br>
+				<label for="adress"> Adress:</label>
+				<input id="adress" type="text" name="Adress" Placeholder="27-Mohb st" required>
+			<br><br>
+				<label for="dish"> Dish:</label>
+				<select id="dish" name="Dish" required>
+
+					<option value="0" selected disabled hidden>Dish name</option>
+
+					<option value="Korean BBQ Beef Quesadillas">Korean BBQ Beef Quesadillas</option>
+
+					<option value="Loaded Chorizo Kimchi Hot Dogs">Loaded Chorizo Kimchi Hot Dog</option>
+
+					<option value="Naan-Chos with Chana Masala">Naan-Chos with Chana Masala</option>
+
+					<option value="ramen carbonara">ramen carbonara</option>
+
+					<option value="Chicken Unlimited">Chicken Unlimited</option>
+
+					<option value="thai peanut hummus">thai peanut hummus</option>
+					
+				</select>
+			<br><br>
+				<label for="size"> Size:</label>
+				<select id="size" name="Size" required>
+
+					<option value="0" selected disabled hidden>size</option>
+
+					<option value="Small">Small</option>
+
+					<option value="Mediam">Mediam</option>
+
+					<option value="Large">Large</option>
+					
+				</select>
+			<br><br>
+				<label for="quant"> Quantity:</label>
+				<input id="quant" type="number" name="Quantity" value="1" min="1" max="30" required>
+			<br><br>
+				<Button type="submit">Done!</Button>
+			</form>
+			
+		</div>
+
+	</div>
+
+
+	<!-- JavaScribt -->>
+	<script>
+
+		//Dark mode & Light mode
+		function DarkMode(){
+			$(function() {
+				$("#header").css("background-image","url('Images/Arabasta cover dark.jpg')");
+
+				$("body").css("background-color","#1c1815");
+
+				$("#food_menue").css("background-color","#1c1815");
+				$(".food-card").css("background-color","#4b2d1f");
+				$(".food-card").css("border-color","black");
+				$(".food-info h4").css("color","white");
+				$(".price").css("color","white");
+
+				$("#form").css("background-color","#4b2d1f");
+				$("div#form h3").css("color","white");
+				$("#form label").css("color","white");
+			});
+		};
+
+		function LightMode(){
+			$(function() {
+				$("#header").css("background-image","url('Images/Arabasta cover light.jpg')");
+				
+				$("body").css("background-color","white");
+
+				$("#food_menue").css("background-color","white");
+				$(".food-card").css("background-color","#f1f1f1");
+				$(".food-card").css("border-color","#ccc");
+				$(".food-info h4").css("color","#333");
+				$(".price").css("color","#000");
+
+				$("#form").css("background-color","#f1f1f1");
+				$("div#form h3").css("color","black");
+				$("#form label").css("color","black");
+			});
+		};
+
+
+		//form submission message
+			function submitForm() {
+			alert("Thank you for ordering, we will contact you soon!");
+		};
+		
+
+	</script>
+
+</body>
+</html>
